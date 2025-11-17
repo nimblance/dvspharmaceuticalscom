@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { ChevronDown, ChevronUp, Briefcase, Award, Activity } from "lucide-react";
+
+import damienImage from "@assets/Damien_1763402336827.jpg";
+import doronImage from "@assets/Doronn_1763402336828.jpg";
+import guyImage from "@assets/Guy_1763402336828.jpg";
+import dirkImage from "@assets/Dirk_1763402336828.jpg";
+import laurentImage from "@assets/Laurent_1763402336828.jpg";
 
 interface TeamMember {
   name: string;
@@ -9,6 +16,7 @@ interface TeamMember {
   expertise: string;
   bio: string[];
   icon: typeof Briefcase;
+  image: string;
 }
 
 export function Team() {
@@ -30,6 +38,7 @@ export function Team() {
       title: "Co-Founder, Partner",
       expertise: "Commercial Strategy & Market Access",
       icon: Briefcase,
+      image: doronImage,
       bio: [
         "A seasoned Business Development professional with over 30 years of international experience in the healthcare industry, including Vaccines and Pharmaceuticals sectors, having worked for prominent companies such as GSK, Novo Nordisk, Eli Lilly, Schering-Plough, and Teva. His career spans across Europe, the USA, and the International regions, with a specialized focus on business development, commercial strategy and Market Access.",
         "At GSK, Doronn served as the Vaccines International Franchise Head, overseeing influenza, travel vaccines, adult and adolescent vaccines. The scope included MENA LATAM CANADA and ASIA. Before that, he led Commercial Strategy in China and supported selected markets in APAC, including Hong Kong, Taiwan, and South Korea, on numerous strategic projects.",
@@ -42,6 +51,7 @@ export function Team() {
       title: "Co-Founder, Partner",
       expertise: "Business Development & Licensing",
       icon: Award,
+      image: damienImage,
       bio: [
         "Damien Dessis is an experienced business development leader in the biologics and vaccines sectors, with a strong track record across global markets. Over the course of his career, he has developed broad expertise in deal structuring, financial valuation, negotiation, and complex partnering transactions, helping organizations build value through strategic collaborations and portfolio growth.",
         "Damien has held senior business development roles, namely at GSK Vaccines, Valneva and various smaller organizations, where he contributed to advancing innovative vaccines and biologics portfolios through partnerships, licensing agreements, and pipeline optimization initiatives. His strategic vision and keen understanding of industry trends have allowed him to forge successful partnerships and transactions, creating significant value and growth for his organizations.",
@@ -53,6 +63,7 @@ export function Team() {
       title: "Partner, Chief Medical Officer",
       expertise: "Medical Affairs & Clinical Operations",
       icon: Activity,
+      image: dirkImage,
       bio: [
         "Dr. Dirk Poelaert is a senior medical leader and global expert in vaccines and pharmaceuticals, with more than 30 years of international experience across medical, clinical, and commercial operations in leading global companies. A medical doctor by training (KU Leuven) with postgraduate studies in Business Management and Clinical Trials & Statistics, he has held senior leadership positions at Eli Lilly, Astra, MSD Belgium, and GSK Vaccines, where he directed European and global medical affairs, clinical operations, and vaccine-strategy programs.",
         "His career reflects a strong balance between scientific excellence, operational rigor, and strategic vision, consistently driving innovation, compliance, and value creation across the healthcare ecosystem.",
@@ -64,6 +75,7 @@ export function Team() {
       title: "Advisor, Biosimilars",
       expertise: "Biosimilars & Biologics Commercialization",
       icon: Award,
+      image: laurentImage,
       bio: [
         "Dr. Laurent Massuyeau is a global expert in biosimilars and biologics commercialisation, combining deep scientific knowledge with extensive executive experience. A Doctor of Veterinary Medicine with an MBA from INSEAD, he began his career in senior roles at Eli Lilly, Novartis, and Merck Serono, where he led international business development and licensing activities.",
         "In 2013, he founded IQone Healthcare Europe, a Swiss-based specialty and biosimilar company dedicated to improving patient access to high-quality biologics across Europe.",
@@ -76,6 +88,7 @@ export function Team() {
       title: "Partner, Licensing, Biosimilars",
       expertise: "Business Development & Strategic Licensing",
       icon: Briefcase,
+      image: guyImage,
       bio: [
         "Guy spent more than 18 years at Teva Pharmaceuticals, where he was a senior member of the Global Business Development & Licensing team. In this capacity, he personally led negotiations for dozens of high-value licensing deals and strategic alliances, managing multi-functional teams and aligning with key internal stakeholders in R&D, legal, regulatory, and commercial operations.",
         "Following his tenure at Teva, Guy served as Head of Business Development at Trevena, a publicly traded US biotech company. There, he led the global out-licensing strategy for Trevena's lead asset, Olinvyk®, and drove alliance management initiatives with regional and global partners. He was also actively involved in partnering discussions for the company's early-stage pipeline assets.",
@@ -109,8 +122,20 @@ export function Team() {
                 data-testid={`card-team-${index}`}
               >
                 <CardHeader className="space-y-3">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-primary/10 text-primary mb-2">
-                    <member.icon className="h-8 w-8" />
+                  <div className="relative inline-flex items-center justify-center mb-2">
+                    <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                      <Avatar className="w-full h-full">
+                        <AvatarImage 
+                          src={member.image} 
+                          alt={member.name}
+                          className="object-cover"
+                        />
+                        <AvatarFallback className="text-2xl font-semibold bg-primary/10 text-primary">
+                          {member.name.split(' ').map(n => n[0]).join('')}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="absolute inset-0 bg-white/10 pointer-events-none"></div>
+                    </div>
                   </div>
                   <CardTitle className="text-xl md:text-2xl leading-tight">
                     {member.name}
