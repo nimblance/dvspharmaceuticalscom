@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import dvsLogo from "@assets/Screenshot 2025-11-17 at 18.25.22_1763400324343.png";
+import dvsLogo from "@assets/image_1763489958984.png";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +32,10 @@ export function Navigation() {
 
   const navLinks = [
     { label: "About", id: "about" },
+    { label: "What We Do", id: "what-we-do" },
     { label: "Collaborations", id: "collaborations" },
-    { label: "Business Model", id: "business-model" },
     { label: "Team", id: "team" },
+    { label: "Advisory Board", id: "advisory-board" },
     { label: "Contact", id: "contact" },
   ];
 
