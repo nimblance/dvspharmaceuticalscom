@@ -8,7 +8,6 @@ import damienImage from "@assets/Damien_1763402336827.jpg";
 import doronImage from "@assets/Doronn_1763402336828.jpg";
 import guyImage from "@assets/Guy_1763402336828.jpg";
 import dirkImage from "@assets/Dirk_1763402336828.jpg";
-import laurentImage from "@assets/Laurent_1763402336828.jpg";
 
 interface TeamMember {
   name: string;
@@ -68,19 +67,6 @@ export function Team() {
         "Dr. Dirk Poelaert is a senior medical leader and global expert in vaccines and pharmaceuticals, with more than 30 years of international experience across medical, clinical, and commercial operations in leading global companies. A medical doctor by training (KU Leuven) with postgraduate studies in Business Management and Clinical Trials & Statistics, he has held senior leadership positions at Eli Lilly, Astra, MSD Belgium, and GSK Vaccines, where he directed European and global medical affairs, clinical operations, and vaccine-strategy programs.",
         "His career reflects a strong balance between scientific excellence, operational rigor, and strategic vision, consistently driving innovation, compliance, and value creation across the healthcare ecosystem.",
         "Dr. Poelaert's expertise spans the full vaccine lifecycle, with a unique focus on pandemic preparedness and response, including influenza and COVID-19 vaccines. At GSK Biologicals, he served as Global Medical Director for Pandemic Influenza, leading scientific communication and global medical planning during critical health-emergency phases. His deep understanding of vaccine R&D, medical affairs, and public-health interfaces positions him as a recognized authority in pandemic-vaccine strategy and implementation."
-      ]
-    },
-    {
-      name: "Dr. Laurent Massuyeau",
-      title: "Advisor, Biosimilars",
-      expertise: "Biosimilars & Biologics Commercialization",
-      icon: Award,
-      image: laurentImage,
-      bio: [
-        "Dr. Laurent Massuyeau is a global expert in biosimilars and biologics commercialisation, combining deep scientific knowledge with extensive executive experience. A Doctor of Veterinary Medicine with an MBA from INSEAD, he began his career in senior roles at Eli Lilly, Novartis, and Merck Serono, where he led international business development and licensing activities.",
-        "In 2013, he founded IQone Healthcare Europe, a Swiss-based specialty and biosimilar company dedicated to improving patient access to high-quality biologics across Europe.",
-        "Under his leadership, IQone Healthcare Switzerland became one of the top three biosimilar companies in the Swiss market, renowned for operational excellence and trusted partnerships with leading global biopharma players. IQone Europe was acquired by Clinigen Group in 2018, becoming Clinigen Europe, and IQone Switzerland was acquired by Celltrion in 2024, becoming its Swiss subsidiary.",
-        "Dr. Massuyeau now serves as a Senior Advisor and member of the DVS Partners Advisory Board, where his experience in biosimilar strategy, market access, and commercial excellence continues to drive value for clients and partners worldwide."
       ]
     },
     {

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Building2, Target, Handshake, TrendingUp } from "lucide-react";
+import { Building2, Target, Handshake, Shield } from "lucide-react";
 
 export function About() {
   const highlights = [
@@ -9,9 +9,9 @@ export function About() {
       description: "Focus on Vaccines, Biologicals, and Pharmaceuticals business development"
     },
     {
-      icon: Target,
-      title: "Strategic Focus",
-      description: "Strong emphasis on strategic alliances and international partnerships"
+      icon: Shield,
+      title: "Pandemic Vaccine Expertise",
+      description: "Unique experience with COVID-19 and influenza vaccines, having partnered with 40+ governments worldwide"
     },
     {
       icon: Handshake,
@@ -19,9 +19,9 @@ export function About() {
       description: "Extensive network across multinational and local partners worldwide"
     },
     {
-      icon: TrendingUp,
-      title: "Market Expansion",
-      description: "Effective solutions for portfolio development and market access"
+      icon: Target,
+      title: "Strategic Partnerships",
+      description: "Strong emphasis on strategic alliances and international collaborations"
     }
   ];
 
@@ -50,6 +50,16 @@ export function About() {
               <p className="text-base md:text-lg leading-relaxed">
                 By leveraging collaborations with multinational and local partners, DVS delivers significant value, enabling the <span className="text-foreground font-semibold">commercialization of prioritized products in the international arena</span>, as well as the development of its clients and partners portfolio.
               </p>
+
+              {/* Company Statement */}
+              <div className="pt-6 border-t border-border mt-6">
+                <blockquote className="text-xl md:text-2xl font-semibold text-primary italic">
+                  "We say what we think, we do what we say."
+                </blockquote>
+                <p className="text-sm md:text-base text-muted-foreground mt-3">
+                  This principle guides everything we do at DVS Partners—from how we build relationships to how we execute partnerships.
+                </p>
+              </div>
             </div>
           </div>
 
