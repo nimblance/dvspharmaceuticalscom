@@ -35,7 +35,6 @@ export function Navigation() {
     { label: "What We Do", id: "what-we-do" },
     { label: "Collaborations", id: "collaborations" },
     { label: "Team", id: "team" },
-    { label: "Advisory Board", id: "advisory-board" },
     { label: "Contact", id: "contact" },
   ];
 

@@ -5,23 +5,23 @@ export function About() {
   const highlights = [
     {
       icon: Building2,
-      title: "Specialized Expertise",
-      description: "Focus on Vaccines, Biologicals, and Pharmaceuticals business development"
+      title: "Pharmaceutical Strategy Specialists",
+      description: "Specialized focus on strategic business development for Vaccines, Biologicals, and Pharmaceuticals"
     },
     {
       icon: Shield,
-      title: "Pandemic Vaccine Expertise",
-      description: "Unique experience with COVID-19 and influenza vaccines, having partnered with 40+ governments worldwide"
-    },
-    {
-      icon: Handshake,
-      title: "Proven Track Record",
-      description: "Extensive network across multinational and local partners worldwide"
+      title: "Pandemic Vaccine Leadership",
+      description: "Proven expertise in COVID-19 and influenza vaccines with 40+ government partnerships worldwide"
     },
     {
       icon: Target,
-      title: "Strategic Partnerships",
-      description: "Strong emphasis on strategic alliances and international collaborations"
+      title: "Strategic Market Access",
+      description: "Deep expertise in market expansion and portfolio development across international markets"
+    },
+    {
+      icon: Handshake,
+      title: "Global Partner Network",
+      description: "Extensive collaborations with multinational and local partners across all continents"
     }
   ];
 
@@ -40,7 +40,11 @@ export function About() {
 
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
-                Our team specializes in <span className="text-foreground font-semibold">Vaccines, Biologicals and Pharmaceuticals business development</span> with a strong focus on strategic alliances and partnerships.
+                DVS Partners is a <span className="text-foreground font-semibold">pharmaceutical specialized strategy company</span> focused on Vaccines, Biologicals, and Pharmaceuticals business development with a strong emphasis on strategic alliances and partnerships.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Our team brings <span className="text-foreground font-semibold">unique expertise in pandemic vaccines</span>, including COVID-19 and influenza, having successfully partnered with more than 40 governments worldwide during critical public health responses. This specialized experience, combined with our deep understanding of the pharmaceutical landscape, positions us to deliver exceptional value in complex, high-stakes environments.
               </p>
 
               <p className="text-base md:text-lg leading-relaxed">
