@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:static",
+  "buildCommand": "npx vite build --config vite.config.static.ts",
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
