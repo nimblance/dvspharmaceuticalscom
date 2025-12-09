@@ -31,11 +31,9 @@ export function Navigation() {
   };
 
   const navLinks = [
-    { label: "About", id: "about" },
     { label: "What We Do", id: "what-we-do" },
     { label: "Collaborations", id: "collaborations" },
-    { label: "Team", id: "team" },
-    { label: "Contact", id: "contact" },
+    { label: "Who We Are", id: "who-we-are" },
   ];
 
   return (
@@ -73,15 +71,6 @@ export function Navigation() {
               ))}
             </div>
 
-            {/* CTA Button - Desktop */}
-            <div className="hidden md:block">
-              <Button
-                onClick={() => scrollToSection("contact")}
-                data-testid="button-contact-nav"
-              >
-                Get In Touch
-              </Button>
-            </div>
 
             {/* Mobile Menu Button */}
             <Button
@@ -112,13 +101,6 @@ export function Navigation() {
                 {link.label}
               </Button>
             ))}
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="w-full max-w-xs mt-4"
-              data-testid="button-contact-mobile"
-            >
-              Get In Touch
-            </Button>
           </div>
         </div>
       )}
