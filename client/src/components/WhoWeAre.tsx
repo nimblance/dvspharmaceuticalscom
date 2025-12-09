@@ -41,7 +41,7 @@ export function WhoWeAre() {
       title: "Co-Founder, Partner",
       expertise: "Commercial Strategy & Market Access",
       image: doronImage,
-      linkedinUrl: "https://www.linkedin.com/in/doronn-sitruk/",
+      linkedinUrl: "https://www.linkedin.com/in/doronn-victor-sitruk-31b395/",
       bio: [
         "A seasoned Business Development professional with over 30 years of international experience in the healthcare industry, including Vaccines and Pharmaceuticals sectors, having worked for prominent companies such as GSK, Novo Nordisk, Eli Lilly, Schering-Plough, and Teva. His career spans across Europe, the USA, and the International regions, with a specialized focus on business development, commercial strategy and Market Access.",
         "At GSK, Doronn served as the Vaccines International Franchise Head, overseeing influenza, travel vaccines, adult and adolescent vaccines. The scope included MENA LATAM CANADA and ASIA. Before that, he led Commercial Strategy in China and supported selected markets in APAC, including Hong Kong, Taiwan, and South Korea, on numerous strategic projects.",
@@ -68,7 +68,7 @@ export function WhoWeAre() {
       title: "Partner, Chief Medical Officer",
       expertise: "Medical Affairs & Clinical Operations",
       image: dirkImage,
-      linkedinUrl: "https://www.linkedin.com/in/dirk-poelaert/",
+      linkedinUrl: "https://www.linkedin.com/in/dirk-poelaert-md-89950b2/",
       bio: [
         "Dr. Dirk Poelaert is a senior medical leader and global expert in vaccines and pharmaceuticals, with more than 30 years of international experience across medical, clinical, and commercial operations in leading global companies. A medical doctor by training (KU Leuven) with postgraduate studies in Business Management and Clinical Trials & Statistics, he has held senior leadership positions at Eli Lilly, Astra, MSD Belgium, and GSK Vaccines, where he directed European and global medical affairs, clinical operations, and vaccine-strategy programs.",
         "His career reflects a strong balance between scientific excellence, operational rigor, and strategic vision, consistently driving innovation, compliance, and value creation across the healthcare ecosystem.",
@@ -81,7 +81,7 @@ export function WhoWeAre() {
       title: "Partner, Licensing, Biosimilars",
       expertise: "Business Development & Strategic Licensing",
       image: guyImage,
-      linkedinUrl: "https://www.linkedin.com/in/guy-dotan/",
+      linkedinUrl: "https://www.linkedin.com/in/guydotanbd/",
       bio: [
         "Guy spent more than 18 years at Teva Pharmaceuticals, where he was a senior member of the Global Business Development & Licensing team. In this capacity, he personally led negotiations for dozens of high-value licensing deals and strategic alliances, managing multi-functional teams and aligning with key internal stakeholders in R&D, legal, regulatory, and commercial operations.",
         "Following his tenure at Teva, Guy served as Head of Business Development at Trevena, a publicly traded US biotech company. There, he led the global out-licensing strategy for Trevena's lead asset, Olinvyk®, and drove alliance management initiatives with regional and global partners. He was also actively involved in partnering discussions for the company's early-stage pipeline assets.",
@@ -94,7 +94,7 @@ export function WhoWeAre() {
       title: "Advisor",
       expertise: "Biosimilars & Biologics Commercialization",
       image: laurentImage,
-      linkedinUrl: "https://www.linkedin.com/in/laurent-massuyeau/",
+      linkedinUrl: "https://www.linkedin.com/in/laurent-massuyeau-330646/",
       isAdvisor: true,
       bio: [
         "Dr. Laurent Massuyeau is a global expert in biosimilars and biologics commercialisation, combining deep scientific knowledge with extensive executive experience. A Doctor of Veterinary Medicine with an MBA from INSEAD, he began his career in senior roles at Eli Lilly, Novartis, and Merck Serono, where he led international business development and licensing activities.",
