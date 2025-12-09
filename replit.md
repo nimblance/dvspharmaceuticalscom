@@ -14,13 +14,11 @@ Professional corporate website for DVS Partners, a healthcare business developme
 ### Frontend Structure
 - **Single-page application** with smooth scroll navigation
 - **Sections**:
-  1. Hero - Full-screen introduction with company value proposition
-  2. About Us (Who We Are) - Pharmaceutical specialized strategy company overview, pandemic vaccine expertise (COVID-19, influenza, 40+ governments), and company statement "We say what we think, we do what we say"
-  3. What We Do - Comprehensive elaboration of two core partnership models (Market Expansion & Portfolio Development) across all product categories
-  4. Collaborations - Showcase of 8 strategic partnerships (Vaccines and Biologicals/Pharma)
-  5. Team - Combined section with Leadership Team (4 partners) and integrated Advisory Board (visually separated but part of same section)
-  6. Contact - Professional contact form with React Query mutations and polished UX
-  7. Footer - Quick links and company information
+  1. Hero - Title-only introduction (no badges, stats, or CTAs)
+  2. What We Do - Comprehensive elaboration of two core partnership models (Market Expansion & Portfolio Development) - appears immediately after Hero for prominent visibility
+  3. Collaborations - Showcase of 8 strategic partnerships (Vaccines and Biologicals/Pharma)
+  4. Who We Are - Unified section combining company narrative with all leadership profiles (4 partners + 1 advisor) with clickable LinkedIn contact links
+  5. Footer - Quick links and company information
 
 ### Design System
 - **Primary Color**: Navy blue (hsl(210, 85%, 35%)) - matching DVS logo
@@ -32,14 +30,13 @@ Professional corporate website for DVS Partners, a healthcare business developme
 ### Key Features
 - Smooth scroll navigation between sections
 - Mobile-responsive hamburger menu with streamlined navigation
+- Title-only Hero with partnership models immediately visible
 - Pharmaceutical specialized strategy company positioning clearly communicated
 - Pandemic vaccine expertise prominently featured (COVID-19, influenza, 40+ governments)
 - Company identity statement "We say what we think, we do what we say" prominently displayed
-- Integrated Team section combining Leadership Team and Advisory Board with visual separation
-- Expandable team and advisor bios (Read More/Less)
+- Unified "Who We Are" section with all team members (partners + advisor) and clickable LinkedIn contact links
+- Expandable team bios (Read More/Less)
 - Professional team photos with subtle white overlay effect
-- Contact form with React Query mutations, loading states, and inline status messages
-- Comprehensive "What We Do" section elaborating on core business models
 - Professional corporate aesthetic matching DVS Pharma logo
 
 ## Data Model
@@ -100,21 +97,18 @@ All partnership models applied consistently across:
 ### Geographic Reach
 International operations across: Europe, North America, MENA, Latin America, Asia Pacific, China, Canada
 
-## Recent Changes (November 2025)
-- Updated to DVS Pharma official logo (image_1763489958984.png)
-- Positioned company as "pharmaceutical specialized strategy company" in About section
-- Integrated pandemic vaccine expertise into narrative (COVID-19, influenza, 40+ governments partnership)
-- Added company statement "We say what we think, we do what we say" to About section
-- Created comprehensive "What We Do" section with detailed elaboration of two core partnership models
-- Restructured Team section to integrate Leadership Team (4 partners) and Advisory Board with visual separation
-- Dr. Laurent Massuyeau positioned as Senior Business Advisor in integrated Advisory Board subsection
-- Added professional team photos with white overlay effect for all members
-- Streamlined navigation (removed separate Advisory Board link, integrated into Team section)
-- Implemented production-ready contact form with React Query mutations, loading states, and error handling
-- Removed generic Business Model section (replaced by comprehensive What We Do)
+## Recent Changes (December 2025)
+- Simplified Hero to title-only (removed badges, subheadline, CTAs, and stats)
+- Repositioned "What We Do" to appear immediately after Hero for prominent partnership model visibility
+- Anonymized Brazil partnership description from "influenza vaccines" to "one of its vaccines"
+- Created unified WhoWeAre.tsx component merging About and Team sections with leadership profiles
+- Added clickable LinkedIn contact links under each partner photo ("Contact [Name]")
+- Removed "Get in Touch" contact section entirely
+- Integrated Laurent Massuyeau as advisor within unified "Who We Are" section (removed separate Advisory Board)
+- Streamlined navigation to: What We Do, Collaborations, Who We Are
 
 ## User Preferences
-- Comprehensive content display with detailed elaboration on core business
+- Title-only Hero with partnership models prominently visible immediately after
 - Clear positioning as pharmaceutical specialized strategy company
 - Pandemic vaccine expertise (COVID-19, influenza, 40+ governments) prominently featured
 - Emphasis on two partnership models: Market Expansion and Portfolio Development
@@ -122,7 +116,8 @@ International operations across: Europe, North America, MENA, Latin America, Asi
 - Navy blue color scheme matching DVS Pharma logo
 - Company identity: "We say what we think, we do what we say"
 - Clean, trustworthy design befitting international partnerships
-- Integrated Team section with Leadership Team and Advisory Board (visually separated but not isolated)
+- Unified "Who We Are" section with all team members and LinkedIn contact links
+- No separate Contact section (removed per user request)
 
 ## Technical Notes
 - Logo asset: `attached_assets/image_1763489958984.png` (DVS Pharma official logo)

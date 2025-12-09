@@ -166,7 +166,11 @@ export function WhoWeAre() {
                     href={member.linkedinUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors pt-2"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(member.linkedinUrl, '_blank', 'noopener,noreferrer');
+                    }}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 hover:underline transition-colors pt-2 cursor-pointer relative z-10"
                     data-testid={`link-linkedin-${index}`}
                   >
                     <Linkedin className="h-4 w-4" />
