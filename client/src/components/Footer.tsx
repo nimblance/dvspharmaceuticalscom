@@ -1,5 +1,5 @@
 import { Mail, Linkedin } from "lucide-react";
-import dvsLogo from "@assets/Screenshot 2025-11-17 at 18.25.22_1763400324343.png";
+import dvsLogo from "@assets/image_1763489958984.png";
 
 export function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -57,10 +57,9 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { label: "About Us", id: "about" },
+                { label: "What We Do", id: "what-we-do" },
                 { label: "Collaborations", id: "collaborations" },
-                { label: "Business Model", id: "business-model" },
-                { label: "Team", id: "team" },
+                { label: "Who We Are", id: "about" },
               ].map((link) => (
                 <li key={link.id}>
                   <button
@@ -91,19 +90,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <p className="text-sm text-muted-foreground">
               © {currentYear} DVS Partners. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6">
-              <button
-                onClick={() => scrollToSection("contact")}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                data-testid="link-footer-contact"
-              >
-                Contact
-              </button>
-            </div>
           </div>
         </div>
       </div>
