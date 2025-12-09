@@ -19,7 +19,7 @@ export function Collaborations() {
     {
       title: "Leading Biotechnology Company",
       location: "Brazil",
-      description: "DVS supports a leading public vaccine institute in Latin America in expanding the international reach of one of its vaccines, beyond LATAM, with potential to extend the collaboration to other vaccine products.",
+      description: "DVS supports a leading public vaccine institute in Latin America in expanding the international reach of its influenza vaccines, beyond LATAM, with potential to extend the collaboration to other vaccine products.",
       icon: Globe2
     },
     {
