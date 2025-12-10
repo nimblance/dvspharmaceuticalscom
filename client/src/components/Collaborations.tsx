@@ -38,7 +38,7 @@ export function Collaborations() {
 
   const biologicalsPartnerships: Partnership[] = [
     {
-      title: "MedServe Joint Venture",
+      title: "MediServe Joint Venture",
       location: "Kinshasa & Dubai",
       description: "Through a joint venture, DVS and MedServe, a Leading DRC Distribution company collaborate to supply branded pharmaceutical products across the DRC. DVS manages product sourcing and registration; MedServe handles importation, logistics, sales, and distribution—ensuring reliable supply to patients.",
       icon: Building
@@ -51,7 +51,7 @@ export function Collaborations() {
     },
     {
       title: "MEDIS - European Pharmaceutical Group",
-      location: "Belgium (B2B Division)",
+      location: "Iceland (B2B Division)",
       description: "DVS facilitates B2B contracts between MEDIS and industrial clients, supporting the out-licensing and supply of an e-CTD wide portfolio of pharmaceutical and biological products.",
       icon: Users
     },
