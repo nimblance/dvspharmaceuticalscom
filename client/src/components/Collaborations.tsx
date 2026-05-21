@@ -17,9 +17,9 @@ export function Collaborations() {
       icon: Building
     },
     {
-      title: "Leading Biotechnology Company",
-      location: "Brazil",
-      description: "DVS supports a leading public vaccine institute in Latin America in expanding the international reach of one of its vaccines, beyond LATAM, with potential to extend the collaboration to other vaccine products.",
+      title: "Leading European Biotech Company",
+      location: "Spain",
+      description: "International mandate to support the commercial launch of a European made Protein based Covid-19 vaccine. Scope: Europe and International markets.",
       icon: Globe2
     },
     {
